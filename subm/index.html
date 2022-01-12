@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b5313c31a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bookshelf</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1> BOOKSHELF APPS</h1>
+            <form action="" class="container-input">
+
+                <input type="text" id="book-title" placeholder="Book Title" size="50" class="input-style">
+                <input type="text" id="author" placeholder="Author" size="50" class="input-style">
+                <input type="number" id="year" placeholder="Year" maxlength="5" size="50" class="input-style">
+
+                <p>Apakah sudah selesai dibaca? </p>
+
+                <div class="flex-radio">
+                    <input type="radio" id="complete" name="is-complete" value="true" checked="checked" />
+                    <label for="complete">Ya</label><br>
+                    <input type="radio" id="not-complete" name="is-complete" value="false">
+                    <label for="not-complete">Tidak</label><br>
+                </div>
+                <button id="add-btn" class="input-style"> ADD BOOK </button>
+            </form>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <h2> Buku Sudah Dibaca </h2>
+            <hr>
+            <div id="complete-books" class="complete-books">
+                <div id="complete-book">
+                    <p class="complete-book-counter">BOOK - 1</p>
+                    <h3 class="complete-book-title">Book Title </h3>
+                    <p class="complete-book-author">Author</p>
+                    <p class="complete-book-year">Published Year</p>
+                    <button class="complete-book-btn"> DELETE BOOK </button>
+                    <button class="complete-book-btn edit-btn"> EDIT BOOK </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <h2> Buku Belum Selesai Dibaca </h2>
+            <hr>
+            <div id="not-complete-books" class="not-complete-books">
+                <div id="not-complete-book">
+                    <p class="complete-book-counter">BOOK - 1</p>
+                    <h3 class="complete-book-title">Book Title </h3>
+                    <p class="complete-book-author">Author</p>
+                    <p class="complete-book-year">Published Year</p>
+                    <button class="complete-book-btn"> DELETE BOOK </button>
+                    <button class="complete-book-btn edit-btn"> SELESAI BACA </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
